@@ -26,6 +26,16 @@ CanvasJS.addColorSet("greenShades",
                 ]);
 
 
+    CanvasJS.addColorSet("greenShades3",
+                [//colorSet Array
+
+                "#BFB1B1",
+                "#CDC5C5",
+                "#A69F9F",
+                "#DED7D7",
+                "#9D9B9B"                
+                ]);
+
 
     var chart = new CanvasJS.Chart("chartContainer",
     {
@@ -36,14 +46,14 @@ CanvasJS.addColorSet("greenShades",
       {
        type: "doughnut",
        dataPoints: [
-       {  y: 60, indexLabel: "Productos colocados" },
+       {  y: 60, indexLabel: "60% Productos colocados" },
        {  y: 40, indexLabel: "" }
        ]
      }
 
      ]
 
-     ,colorSet:  "greenShades"
+     ,colorSet:  "greenShades3"
      ,backgroundColor: "#EDEDED"
 
 
@@ -58,13 +68,13 @@ CanvasJS.addColorSet("greenShades",
     var chart2 = new CanvasJS.Chart("chartContainer2",
     {
       title:{
-        text: "Dónde estamos"
+        text: "¿Dónde estámos?"
       },
       data: [
       {
        type: "doughnut",
        dataPoints: [
-       {  y: 75, indexLabel: "Productos colocados" },
+       {  y: 75, indexLabel: "75% Productos colocados" },
        {  y: 25, indexLabel: "" }
        ]
      }
@@ -82,39 +92,25 @@ CanvasJS.addColorSet("greenShades",
 
 
 
-    CanvasJS.addColorSet("greenShades3",
-                [//colorSet Array
-
-                "#2F4F4F",
-                "#008080",
-                "#2E8B57",
-                "#3CB371",
-                "#90EE90"                
-                ]);
-
         var chart3 = new CanvasJS.Chart("chartContainer3",
         {
-            colorSet: "greenShades",
+            colorSet: "greenShades3",
                  backgroundColor: "#EDEDED",
 
 
             title:{
-                text: "Sector de clientes alcanzados"
+                text: "Información en clientes nuevos"
             },
             data: [
             {        
                 type: "column",
                 dataPoints: [
 
-                { x: 10, y: 71 , label:"Edad"},
-                { x: 20, y: 55},
-                { x: 30, y: 50 },
-                { x: 40, y: 65 },
-                { x: 50, y: 95 },
-                { x: 60, y: 68 },
-                { x: 70, y: 28 },
-                { x: 80, y: 34 },
-                { x: 90, y: 14}
+                { x: 10, y: 71 , label:"Edad 20 - 35"},
+                { x: 20, y: 55, label:"Originarios de la CDMX"},
+                { x: 30, y: 50 , label:"Género masculino"},
+                { x: 40, y: 65 , label:"Conductores principiantes"},
+                { x: 50, y: 95, label:"Crédito" }
 
                 ]
             }
@@ -141,22 +137,18 @@ CanvasJS.addColorSet("greenShades",
                  backgroundColor: "#EDEDED",
 
             title:{
-                text: "Sector de clientes alcanzados"
+                text: "Información en clientes nuevos"
             },
             data: [
             {        
                 type: "column",
                 dataPoints: [
 
-                { x: 10, y: 71 },
-                { x: 20, y: 55},
-                { x: 30, y: 50 },
-                { x: 40, y: 65 },
-                { x: 50, y: 95 },
-                { x: 60, y: 68 },
-                { x: 70, y: 28 },
-                { x: 80, y: 34 },
-                { x: 90, y: 14}
+                { x: 10, y: 3 , label:"Edad 20 - 35"},
+                { x: 20, y: 15, label:"Originarios de la CDMX"},
+                { x: 30, y: 25 , label:"Género masculino"},
+                { x: 40, y: 29 , label:"Conductores principiantes"},
+                { x: 50, y: 88, label:"Crédito" }
 
                 ]
             }
@@ -165,20 +157,78 @@ CanvasJS.addColorSet("greenShades",
 
         chart4.render();
 
+
+
+        var chart5 = new CanvasJS.Chart("chartContainer5",
+        {
+            colorSet: "greenShades3",
+                 backgroundColor: "#EDEDED",
+
+
+            title:{
+                text: "Clientes fidelizados"
+            },
+            data: [
+            {        
+                type: "column",
+                dataPoints: [
+
+                { x: 10, y: 11 , label:"Edad 20 - 35"},
+                { x: 20, y: 41, label:"Originarios de la CDMX"},
+                { x: 30, y: 56 , label:"Género masculino"},
+                { x: 40, y: 82 , label:"Conductores principiantes"},
+                { x: 50, y: 34, label:"Crédito" }
+
+                ]
+            }
+            ]
+        });
+
+        chart5.render();
+
+               var chart6 = new CanvasJS.Chart("chartContainer6",
+        {
+            colorSet: "greenShades",
+                 backgroundColor: "#EDEDED",
+
+            title:{
+                text: "Clientes fidelizados"
+            },
+            data: [
+            {        
+                type: "column",
+                dataPoints: [
+
+                { x: 10, y: 45 , label:"Edad 20 - 35"},
+                { x: 20, y: 25, label:"Originarios de la CDMX"},
+                { x: 30, y: 10 , label:"Género masculino"},
+                { x: 40, y: 33 , label:"Conductores principiantes"},
+                { x: 50, y: 44, label:"Crédito" }
+
+                ]
+            }
+            ]
+        });
+
+        chart6.render();
+
+
+
+
   }
   </script>
 
   <style type="text/css">
 
 .outer {
-  border: 0px solid #000;
+  border: 0px solid #ccc;
   display:flex;
   justify-content: center;
   padding: 20px;
 }
 .outer > div {
-  border: 0px solid #000;
-  margin:20px;
+  border: 0px solid #ccc;
+  margin:30px;
 }  
 
 
@@ -287,6 +337,24 @@ CanvasJS.addColorSet("greenShades",
     </div>
 
 </div>
+
+
+
+<div class="outer">
+  
+
+    <div id="chartContainer5" style="height: 300px; width: 50%;">
+    </div>
+
+
+    <div id="chartContainer6" style="height: 300px; width: 50%;">
+    </div>
+
+
+</div>
+
+
+
 
 </body>
 
