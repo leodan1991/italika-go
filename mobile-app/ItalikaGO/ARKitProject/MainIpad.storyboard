@@ -375,6 +375,7 @@
                         <outlet property="sceneView" destination="E6c-py-dvH" id="I70-TL-39m"/>
                         <outlet property="screenshotButton" destination="qI1-of-tgS" id="RLx-ag-NNP"/>
                         <outlet property="settingsButton" destination="j8v-6q-UBb" id="wZV-ib-D05"/>
+                        <outlet property="viewInstrucciones" destination="7bf-fa-zZc" id="k16-1m-wdi"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SZV-WD-TEh" sceneMemberID="firstResponder"/>
@@ -930,7 +931,7 @@
                                     </attributedString>
                                 </state>
                                 <connections>
-                                    <segue destination="fR7-RO-xNF" kind="show" id="aqt-ei-CdG"/>
+                                    <segue destination="0E3-9t-Svt" kind="show" id="imN-1m-uAI"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -1571,53 +1572,61 @@
             <point key="canvasLocation" x="4594" y="-70"/>
         </scene>
         <!--View Controller-->
-        <scene sceneID="GrF-H8-ZCE">
+        <scene sceneID="KKB-aN-cuV">
             <objects>
-                <viewController id="fR7-RO-xNF" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="gxc-WK-fka">
+                <viewController id="0E3-9t-Svt" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="2rG-1F-by4">
                         <rect key="frame" x="0.0" y="0.0" width="834" height="1112"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="n1G-WR-kih">
-                                <rect key="frame" x="299" y="98" width="236" height="45"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="elr-DE-Eyk">
+                                <rect key="frame" x="215.5" y="98" width="403" height="55.5"/>
                                 <state key="normal">
                                     <attributedString key="attributedTitle">
-                                        <fragment content="¿Qué es el cilindraje?">
+                                        <fragment content="¿Qué significa el cilindraje?">
                                             <attributes>
-                                                <font key="NSFont" size="24" name="AvenirNext-Medium"/>
+                                                <font key="NSFont" size="32" name="AvenirNext-Medium"/>
                                                 <integer key="NSUnderline" value="1"/>
                                             </attributes>
                                         </fragment>
                                     </attributedString>
                                 </state>
                             </button>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="vxh-Kv-tpt">
-                                <rect key="frame" x="40" y="155" width="754" height="844"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <mutableString key="text">Empecemos por explicar qué es el cilindraje. El cilindraje se determina por la cantidad de gas (mezcla de aire y combustible) que puede admitir el cilindro del motor, expresado en centímetros cúbicos. Si la motocicleta cuenta con más de un cilindro, la cantidad de gas admitida, o cilindraje, será la suma de la capacidad de todos los cilindros. Se consideran bajos cilindrajes aquellos que van en el rango de 250 centímetros cúbicos o menos. Y de alto cilindraje, de trescientos centímetros hacia arriba.
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AZP-WG-FwY">
+                                <rect key="frame" x="167" y="316" width="500" height="350"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="500" id="Lfa-0I-qRM"/>
+                                </constraints>
+                                <string key="text">Es lo que determina la cantidad de gas (mezcla de aire  y combustible) que se puede admitir el motor.
 
-Típicamente, las cilindradas más pequeñas aplican en motos tales como scooters o motonetas. En la configuración clásica de una motocicleta, existen desde 50 centímetros cúbicos. Siendo la ciento cincuenta, la reina de las cilindradas bajas.
-
-La característica más relevante de una moto de bajo cilindraje, es su economía en cuanto a gasto de combustible. Y son ideales para transportarse en la ciudad y trayectos de cortos a medianos. Y su diseño esbelto las hace muy ágiles para sortear las dificultades del tránsito. Adicionalmente, su mantenimiento es relativamente sencillo y económico.</mutableString>
-                                <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="22"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
+A más cilindraje más potencia, a menor cilindraje más ahorro de combustible y agilidad.</string>
+                                <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="32"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="faq" translatesAutoresizingMaskIntoConstraints="NO" id="RNK-iY-6ma">
+                                <rect key="frame" x="267" y="707.5" width="300" height="300"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="300" id="8l0-IW-QLn"/>
+                                    <constraint firstAttribute="width" constant="300" id="Dne-JX-6cS"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" red="0.85882352939999995" green="0.8980392157" blue="0.91372549020000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="n1G-WR-kih" firstAttribute="top" secondItem="rbn-Hd-Fvc" secondAttribute="top" constant="28" id="4D8-ua-fle"/>
-                            <constraint firstItem="rbn-Hd-Fvc" firstAttribute="bottom" secondItem="vxh-Kv-tpt" secondAttribute="bottom" constant="113" id="BDC-rV-rgu"/>
-                            <constraint firstItem="vxh-Kv-tpt" firstAttribute="leading" secondItem="rbn-Hd-Fvc" secondAttribute="leading" constant="40" id="ZzN-s8-yzf"/>
-                            <constraint firstItem="vxh-Kv-tpt" firstAttribute="top" secondItem="rbn-Hd-Fvc" secondAttribute="top" constant="85" id="cqy-5A-kL5"/>
-                            <constraint firstItem="n1G-WR-kih" firstAttribute="centerX" secondItem="rbn-Hd-Fvc" secondAttribute="centerX" id="f9v-xr-BAG"/>
-                            <constraint firstItem="rbn-Hd-Fvc" firstAttribute="trailing" secondItem="vxh-Kv-tpt" secondAttribute="trailing" constant="40" id="qbA-FV-ITB"/>
+                            <constraint firstItem="elr-DE-Eyk" firstAttribute="top" secondItem="Ujn-3q-ISV" secondAttribute="top" constant="28" id="65h-jy-mZi"/>
+                            <constraint firstItem="AZP-WG-FwY" firstAttribute="centerY" secondItem="Ujn-3q-ISV" secondAttribute="centerY" constant="-100" id="9Wm-ZX-aik"/>
+                            <constraint firstItem="AZP-WG-FwY" firstAttribute="centerX" secondItem="Ujn-3q-ISV" secondAttribute="centerX" id="HZx-cX-Mze"/>
+                            <constraint firstItem="elr-DE-Eyk" firstAttribute="centerX" secondItem="Ujn-3q-ISV" secondAttribute="centerX" id="K6V-6I-rIe"/>
+                            <constraint firstItem="RNK-iY-6ma" firstAttribute="top" secondItem="AZP-WG-FwY" secondAttribute="bottom" constant="41.5" id="gED-dd-OPc"/>
+                            <constraint firstItem="RNK-iY-6ma" firstAttribute="centerX" secondItem="Ujn-3q-ISV" secondAttribute="centerX" id="xTc-Mt-adG"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="rbn-Hd-Fvc"/>
+                        <viewLayoutGuide key="safeArea" id="Ujn-3q-ISV"/>
                     </view>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="1br-78-MZz" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="FyF-pq-0Ie" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1796" y="-166"/>
+            <point key="canvasLocation" x="1796" y="-166.8665667166417"/>
         </scene>
     </scenes>
     <resources>
@@ -1625,6 +1634,7 @@ La característica más relevante de una moto de bajo cilindraje, es su economí
         <image name="app_italika_2" width="1080" height="1920"/>
         <image name="app_italika_3" width="1080" height="1920"/>
         <image name="app_italika_4" width="1080" height="1920"/>
+        <image name="faq" width="256" height="256"/>
         <image name="ft150" width="1048" height="725"/>
         <image name="italika-black" width="444" height="435"/>
         <image name="italikaGO2" width="548" height="415"/>

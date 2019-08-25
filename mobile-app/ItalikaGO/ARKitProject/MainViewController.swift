@@ -22,6 +22,7 @@ class MainViewController: UIViewController {
     let DEFAULT_DISTANCE_CAMERA_TO_OBJECTS = Float(10)
     
     
+    @IBOutlet weak var viewInstrucciones: UIView!
     @IBOutlet weak var lblInstrucciones: UILabel!
     
     override func viewDidLoad() {
@@ -40,6 +41,7 @@ class MainViewController: UIViewController {
         DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + .seconds(yourDelay), execute: { () -> Void in
             UIView.animate(withDuration: yourDuration, animations: { () -> Void in
                 self.lblInstrucciones.isHidden = true
+                self.viewInstrucciones.isHidden = true
             })
         })
         
