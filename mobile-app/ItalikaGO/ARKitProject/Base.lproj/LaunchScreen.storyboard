@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="EHf-IW-A2E">
+            <objects>
+                <viewController id="01J-lp-oVM" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Llm-lL-Icb"/>
+                        <viewControllerLayoutGuide type="bottom" id="xb3-aO-Qok"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="app_italika_1" translatesAutoresizingMaskIntoConstraints="NO" id="std-Wi-yXy">
+                                <rect key="frame" x="0.0" y="-5" width="375" height="672"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="¿Estás listo para " textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="R9B-3T-zYK">
+                                <rect key="frame" x="118.5" y="70" width="138.5" height="25"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="18"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="encontrar la" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lq0-d5-9k7">
+                                <rect key="frame" x="138" y="95" width="99.5" height="25"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="18"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ITALIKA" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ERU-4b-8Cv">
+                                <rect key="frame" x="142.5" y="120" width="90" height="33"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-BoldItalic" family="Avenir Next" pointSize="24"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="he5-T8-Ekq">
+                                <rect key="frame" x="87.5" y="256" width="200" height="150"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="150" id="1eh-md-P9z"/>
+                                    <constraint firstAttribute="width" constant="200" id="xBX-9A-3fv"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Versión 1.0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kMh-3t-M4Z">
+                                <rect key="frame" x="151" y="627.5" width="73" height="19.5"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="14"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="de tus sueños?" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UoE-2i-AXc">
+                                <rect key="frame" x="126" y="153" width="123" height="25"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="18"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="UoE-2i-AXc" firstAttribute="centerX" secondItem="ERU-4b-8Cv" secondAttribute="centerX" id="5uR-Uz-hiW"/>
+                            <constraint firstAttribute="trailing" secondItem="std-Wi-yXy" secondAttribute="trailing" id="8gp-J9-vpg"/>
+                            <constraint firstItem="he5-T8-Ekq" firstAttribute="centerY" secondItem="std-Wi-yXy" secondAttribute="centerY" id="Cn0-Mp-fkg"/>
+                            <constraint firstItem="ERU-4b-8Cv" firstAttribute="centerX" secondItem="std-Wi-yXy" secondAttribute="centerX" id="G7p-NY-bXm"/>
+                            <constraint firstItem="R9B-3T-zYK" firstAttribute="top" secondItem="Llm-lL-Icb" secondAttribute="bottom" constant="50" id="GpX-e6-WKp"/>
+                            <constraint firstItem="std-Wi-yXy" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" id="H7J-SA-9wF"/>
+                            <constraint firstItem="Lq0-d5-9k7" firstAttribute="centerX" secondItem="std-Wi-yXy" secondAttribute="centerX" id="XQl-Hd-zEb"/>
+                            <constraint firstItem="R9B-3T-zYK" firstAttribute="centerX" secondItem="std-Wi-yXy" secondAttribute="centerX" id="d6I-Mf-8tp"/>
+                            <constraint firstItem="kMh-3t-M4Z" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="dVC-gk-GEl"/>
+                            <constraint firstItem="xb3-aO-Qok" firstAttribute="top" secondItem="kMh-3t-M4Z" secondAttribute="bottom" constant="20" id="e0i-hx-rFO"/>
+                            <constraint firstItem="std-Wi-yXy" firstAttribute="top" secondItem="Llm-lL-Icb" secondAttribute="bottom" constant="-25" id="ftr-Rp-407"/>
+                            <constraint firstItem="UoE-2i-AXc" firstAttribute="top" secondItem="ERU-4b-8Cv" secondAttribute="bottom" id="k1K-oF-uYJ"/>
+                            <constraint firstItem="Lq0-d5-9k7" firstAttribute="top" secondItem="R9B-3T-zYK" secondAttribute="bottom" id="lJ1-0k-OLp"/>
+                            <constraint firstItem="xb3-aO-Qok" firstAttribute="top" secondItem="std-Wi-yXy" secondAttribute="bottom" id="mcY-l1-cOm"/>
+                            <constraint firstItem="ERU-4b-8Cv" firstAttribute="top" secondItem="Lq0-d5-9k7" secondAttribute="bottom" id="qWD-Yl-s9V"/>
+                            <constraint firstItem="he5-T8-Ekq" firstAttribute="centerX" secondItem="std-Wi-yXy" secondAttribute="centerX" id="tlx-Ec-zUW"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="52" y="374.66266866566718"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="app_italika_1" width="1080" height="1920"/>
+        <image name="logo" width="547.66668701171875" height="415.33334350585938"/>
+    </resources>
+</document>
