@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="30T-Z1-9Ma">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="L62-Ru-OLw">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -19,18 +19,18 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="app_italika_1" translatesAutoresizingMaskIntoConstraints="NO" id="YRW-ZS-rjQ">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <rect key="frame" x="0.0" y="44" width="375" height="623"/>
                                 <gestureRecognizers/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="italika-black" translatesAutoresizingMaskIntoConstraints="NO" id="n8D-mV-NAW">
-                                <rect key="frame" x="137.5" y="60" width="100" height="100"/>
+                                <rect key="frame" x="137.5" y="104" width="100" height="100"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="100" id="qTy-lY-8tF"/>
                                     <constraint firstAttribute="width" constant="100" id="vrj-o2-YWl"/>
                                 </constraints>
                             </imageView>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Usuario" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="gvi-NL-CJG">
-                                <rect key="frame" x="62.5" y="281" width="250" height="50"/>
+                                <rect key="frame" x="62.5" y="325" width="250" height="50"/>
                                 <color key="backgroundColor" red="0.94189655195652866" green="0.94861240227285348" blue="0.9687599532218274" alpha="0.71238227739726023" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="rnO-5q-yYx"/>
@@ -45,14 +45,14 @@
                                 </userDefinedRuntimeAttributes>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Contraseña" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ikr-L4-VnY">
-                                <rect key="frame" x="62.5" y="348" width="250" height="50"/>
+                                <rect key="frame" x="62.5" y="392" width="250" height="50"/>
                                 <color key="backgroundColor" red="0.941896552" green="0.94861240229999999" blue="0.96875995319999997" alpha="0.71238227740000004" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="Kmx-PJ-dcJ"/>
                                     <constraint firstAttribute="width" constant="250" id="k9r-3q-Vc7"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="16"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" secureTextEntry="YES" textContentType="password"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="color" keyPath="placeholderLabel.textColor">
                                         <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -60,14 +60,14 @@
                                 </userDefinedRuntimeAttributes>
                             </textField>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="3a4-J8-fAh">
-                                <rect key="frame" x="127.5" y="170" width="120" height="80"/>
+                                <rect key="frame" x="127.5" y="214" width="120" height="80"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="120" id="7eJ-Qa-jmw"/>
                                     <constraint firstAttribute="height" constant="80" id="c8k-Dt-hdD"/>
                                 </constraints>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wpf-NB-zWT">
-                                <rect key="frame" x="62.5" y="439" width="250" height="50"/>
+                                <rect key="frame" x="62.5" y="483" width="250" height="50"/>
                                 <color key="backgroundColor" red="0.28411256889999997" green="0.70323263879999998" blue="0.85005217659999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="250" id="04F-s2-ECJ"/>
@@ -78,7 +78,7 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
-                                    <segue destination="AzH-42-IGS" kind="show" id="MWu-pe-Bcb"/>
+                                    <action selector="pressButtonIngresar:" destination="30T-Z1-9Ma" eventType="touchUpInside" id="0yT-K1-69r"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Versión 1.0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VhP-nl-AzE">
@@ -88,7 +88,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uRH-3U-nbQ">
-                                <rect key="frame" x="77.5" y="497" width="220" height="38.5"/>
+                                <rect key="frame" x="77.5" y="541" width="220" height="38.5"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="220" id="mkw-Tv-Y1i"/>
                                 </constraints>
@@ -128,13 +128,16 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="2aw-8w-UQE"/>
                     </view>
+                    <navigationItem key="navigationItem" id="UL9-cb-ChW"/>
                     <connections>
+                        <outlet property="tfContrasena" destination="ikr-L4-VnY" id="e6W-Qe-YPC"/>
+                        <outlet property="tfUsuario" destination="gvi-NL-CJG" id="DRQ-wC-1oL"/>
                         <outlet property="viewGral" destination="fcp-jP-akI" id="FcC-Ib-jzO"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Tfh-B7-FSP" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1919.2" y="-913.49325337331345"/>
+            <point key="canvasLocation" x="-980" y="-913.49325337331345"/>
         </scene>
         <!--Main View Controller-->
         <scene sceneID="tXr-a1-R10">
@@ -640,10 +643,10 @@
             </objects>
             <point key="canvasLocation" x="6279.1999999999998" y="-70.614692653673174"/>
         </scene>
-        <!--View Controller-->
+        <!--Formulario InicioVC-->
         <scene sceneID="gVs-RS-Ukw">
             <objects>
-                <viewController id="CAi-YF-YFb" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="formularioInicio" id="CAi-YF-YFb" customClass="FormularioInicioVC" customModule="ItalikaGo" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="mKW-XU-Xwd">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -716,7 +719,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4IM-r6-C39" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-239.19999999999999" y="-913.49325337331345"/>
+            <point key="canvasLocation" x="700" y="-913.49325337331345"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="wpP-4u-LxO">
@@ -825,7 +828,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="DPm-JB-LES" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="424.80000000000001" y="-913.49325337331345"/>
+            <point key="canvasLocation" x="1364" y="-913.49325337331345"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="QCN-ug-h8B">
@@ -842,8 +845,8 @@
                                     <constraint firstAttribute="height" constant="60" id="s5J-GS-F2w"/>
                                 </constraints>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Experto.                                  ¿Qué performance buscas?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jx7-7M-XCI">
-                                <rect key="frame" x="37.5" y="156" width="300" height="60.5"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="¿Qué performance buscas?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jx7-7M-XCI">
+                                <rect key="frame" x="37.5" y="156" width="300" height="30.5"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="300" id="lzq-3F-EYZ"/>
                                 </constraints>
@@ -852,7 +855,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LWt-Sk-SMI">
-                                <rect key="frame" x="62.5" y="236.5" width="250" height="50"/>
+                                <rect key="frame" x="62.5" y="206.5" width="250" height="50"/>
                                 <color key="backgroundColor" red="0.22589706740000001" green="0.30980392159999998" blue="0.71764705880000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="250" id="Pqn-JW-Wfj"/>
@@ -867,7 +870,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mxg-Xo-mkG">
-                                <rect key="frame" x="62.5" y="306" width="250" height="50"/>
+                                <rect key="frame" x="62.5" y="276" width="250" height="50"/>
                                 <color key="backgroundColor" red="0.22589706740000001" green="0.31062202459999999" blue="0.71652918779999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="250" id="Bdl-RF-sTJ"/>
@@ -882,7 +885,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="u1J-Ki-fdP">
-                                <rect key="frame" x="62.5" y="376" width="250" height="50"/>
+                                <rect key="frame" x="62.5" y="346" width="250" height="50"/>
                                 <color key="backgroundColor" red="0.22589706740000001" green="0.30980392159999998" blue="0.71764705880000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="T5M-Xn-hGR"/>
@@ -897,7 +900,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ikx-r7-s9s">
-                                <rect key="frame" x="62.5" y="446" width="250" height="50"/>
+                                <rect key="frame" x="62.5" y="416" width="250" height="50"/>
                                 <color key="backgroundColor" red="0.22589706740000001" green="0.31062202459999999" blue="0.71652918779999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="Fkr-pL-cCh"/>
@@ -950,7 +953,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fKo-lv-iCg" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1796" y="-913.49325337331345"/>
+            <point key="canvasLocation" x="2735.1999999999998" y="-913.49325337331345"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="xHg-Te-sDX">
@@ -967,46 +970,7 @@
                                         <fragment content="¿Qué significa el cilindraje?">
                                             <attributes>
                                                 <font key="NSFont" size="20" name="AvenirNext-Medium"/>
-                                                <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
-                                                    <tabStops>
-                                                        <textTab alignment="left" location="28">
-                                                            <options/>
-                                                        </textTab>
-                                                        <textTab alignment="left" location="56">
-                                                            <options/>
-                                                        </textTab>
-                                                        <textTab alignment="left" location="84">
-                                                            <options/>
-                                                        </textTab>
-                                                        <textTab alignment="left" location="112">
-                                                            <options/>
-                                                        </textTab>
-                                                        <textTab alignment="left" location="140">
-                                                            <options/>
-                                                        </textTab>
-                                                        <textTab alignment="left" location="168">
-                                                            <options/>
-                                                        </textTab>
-                                                        <textTab alignment="left" location="196">
-                                                            <options/>
-                                                        </textTab>
-                                                        <textTab alignment="left" location="224">
-                                                            <options/>
-                                                        </textTab>
-                                                        <textTab alignment="left" location="252">
-                                                            <options/>
-                                                        </textTab>
-                                                        <textTab alignment="left" location="280">
-                                                            <options/>
-                                                        </textTab>
-                                                        <textTab alignment="left" location="308">
-                                                            <options/>
-                                                        </textTab>
-                                                        <textTab alignment="left" location="336">
-                                                            <options/>
-                                                        </textTab>
-                                                    </tabStops>
-                                                </paragraphStyle>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO"/>
                                                 <integer key="NSUnderline" value="1"/>
                                                 <color key="NSUnderlineColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                             </attributes>
@@ -1162,7 +1126,7 @@ A más cilindraje más potencia, a menor cilindraje más ahorro de combustible y
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="su1-pe-edc" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1127.2" y="-913.49325337331345"/>
+            <point key="canvasLocation" x="2066.4000000000001" y="-913.49325337331345"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="nav-Fq-MSK">
@@ -1252,7 +1216,7 @@ A más cilindraje más potencia, a menor cilindraje más ahorro de combustible y
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qR2-ha-2oE" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2468" y="-913.49325337331345"/>
+            <point key="canvasLocation" x="3407.1999999999998" y="-913.49325337331345"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="qu8-Fv-hmh">
@@ -1349,7 +1313,7 @@ A más cilindraje más potencia, a menor cilindraje más ahorro de combustible y
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qYX-EV-QhE" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3200.8000000000002" y="-913.49325337331345"/>
+            <point key="canvasLocation" x="4140" y="-913.49325337331345"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="azt-uG-Bmz">
@@ -1437,7 +1401,7 @@ A más cilindraje más potencia, a menor cilindraje más ahorro de combustible y
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="QAE-r1-8do" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3932" y="-913.49325337331345"/>
+            <point key="canvasLocation" x="4871.1999999999998" y="-913.49325337331345"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="TkY-u1-3FR">
@@ -1529,7 +1493,7 @@ A más cilindraje más potencia, a menor cilindraje más ahorro de combustible y
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vZw-I7-48c" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4655.1999999999998" y="-913.49325337331345"/>
+            <point key="canvasLocation" x="5594.3999999999996" y="-913.49325337331345"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="Ha0-EB-xRN">
@@ -1624,7 +1588,7 @@ A más cilindraje más potencia, a menor cilindraje más ahorro de combustible y
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xyB-Gl-GV8" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5319.1999999999998" y="-913.49325337331345"/>
+            <point key="canvasLocation" x="6258.3999999999996" y="-913.49325337331345"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="KZy-Eo-ixt">
@@ -1642,7 +1606,7 @@ A más cilindraje más potencia, a menor cilindraje más ahorro de combustible y
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="DIN-ag-keK" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1178.4000000000001" y="-913.49325337331345"/>
+            <point key="canvasLocation" x="-239.19999999999999" y="-913.49325337331345"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="MIb-Ef-bQo">
@@ -1661,6 +1625,24 @@ A más cilindraje más potencia, a menor cilindraje más ahorro de combustible y
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yrD-cA-Ngk" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="4680.8000000000002" y="-71.514242878560722"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="rrB-hz-3VV">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="L62-Ru-OLw" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="tCN-U1-GDy">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="30T-Z1-9Ma" kind="relationship" relationship="rootViewController" id="slv-h4-0XG"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="V5S-bV-bhL" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1919.2" y="-913.49325337331345"/>
         </scene>
     </scenes>
     <resources>

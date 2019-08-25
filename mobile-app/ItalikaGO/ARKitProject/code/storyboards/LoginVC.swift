@@ -12,6 +12,10 @@ class LoginVC: UIViewController {
 
     @IBOutlet var viewGral: UIView!
     
+    @IBOutlet weak var tfUsuario: UITextField!
+    @IBOutlet weak var tfContrasena: UITextField!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -25,6 +29,8 @@ class LoginVC: UIViewController {
         
         view.addGestureRecognizer(tap)
         
+        self.navigationController?.navigationBar.isHidden = true
+        
     }
     
  
@@ -34,6 +40,56 @@ class LoginVC: UIViewController {
         view.endEditing(true)
     }
     
+    
+    @IBAction func pressButtonIngresar(_ sender: UIButton) {
+        
+        guard let usuario = tfUsuario.text, usuario.trim() != "" else {
+            showMensajeError()
+            return
+        }
+        
+        guard let contraseña = tfContrasena.text, contraseña.trim() != "" else {
+            showMensajeError()
+            return
+        }
+        
+        
+        DispatchQueue.main.async {
+            
+            if let vc = self.storyboard?.instantiateViewController(withIdentifier: "formularioInicio") as? FormularioInicioVC{
+                 self.navigationController?.pushViewController(vc, animated: true)
+            }
+            
+          
+            
+        }
+        
+    }
+    
+    func showMensajeError(){
+        
+       
+        
+        let alert = UIAlertController(title: "Aviso", message: "Recuerda que para acceder necesitas ingresar tu usuario y contraseña", preferredStyle: .alert)
+        
+        alert.addAction(UIAlertAction(title: "Aceptar", style: .default, handler: nil))
+        
+        self.present(alert, animated: true)
+        
+        
+    }
+    
   
 
+}
+
+
+extension String
+{
+    func trim() -> String
+    {
+        //return self.stringByTrimmingCharactersInSet(NSCharacterSet.whitespaceCharacterSet())
+        
+        return self.trimmingCharacters(in: .whitespacesAndNewlines)
+    }
 }

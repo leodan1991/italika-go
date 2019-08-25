@@ -32,6 +32,7 @@
 		C490DAC41E9AB63400210960 /* VirtualObjectSelectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C490DAC31E9AB63400210960 /* VirtualObjectSelectionViewController.swift */; };
 		C4E87DD91EA6B40F002117D6 /* VirtualObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4E87DD81EA6B40F002117D6 /* VirtualObject.swift */; };
 		C4FBC02B1EC6438B003F7864 /* ARCameraTrackingState.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4FBC02A1EC6438B003F7864 /* ARCameraTrackingState.swift */; };
+		DB6146622312E60300184EE3 /* FormularioInicioVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB6146612312E60300184EE3 /* FormularioInicioVC.swift */; };
 		DBA715AF23124465007EC83D /* efectoMoto.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = DBA715AE23124465007EC83D /* efectoMoto.mp3 */; };
 		DBA715B22312697A007EC83D /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBA715B12312697A007EC83D /* LoginVC.swift */; };
 		DBA715B423126DE4007EC83D /* MainIpad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DBA715B323126DE4007EC83D /* MainIpad.storyboard */; };
@@ -67,6 +68,7 @@
 		C490DAC31E9AB63400210960 /* VirtualObjectSelectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VirtualObjectSelectionViewController.swift; sourceTree = "<group>"; };
 		C4E87DD81EA6B40F002117D6 /* VirtualObject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = VirtualObject.swift; path = ../VirtualObject.swift; sourceTree = "<group>"; };
 		C4FBC02A1EC6438B003F7864 /* ARCameraTrackingState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ARCameraTrackingState.swift; sourceTree = "<group>"; };
+		DB6146612312E60300184EE3 /* FormularioInicioVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormularioInicioVC.swift; sourceTree = "<group>"; };
 		DBA715AE23124465007EC83D /* efectoMoto.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = efectoMoto.mp3; sourceTree = "<group>"; };
 		DBA715B12312697A007EC83D /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
 		DBA715B323126DE4007EC83D /* MainIpad.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MainIpad.storyboard; sourceTree = "<group>"; };
@@ -159,6 +161,7 @@
 			isa = PBXGroup;
 			children = (
 				DBA715B12312697A007EC83D /* LoginVC.swift */,
+				DB6146612312E60300184EE3 /* FormularioInicioVC.swift */,
 			);
 			path = storyboards;
 			sourceTree = "<group>";
@@ -274,6 +277,7 @@
 				39C0B9591E9C6B1F003FCA0C /* SettingsViewController.swift in Sources */,
 				A3D672ED1EF0E7C500110E48 /* Cup.swift in Sources */,
 				C490DAC41E9AB63400210960 /* VirtualObjectSelectionViewController.swift in Sources */,
+				DB6146622312E60300184EE3 /* FormularioInicioVC.swift in Sources */,
 				C42A71BD1E9C0AF200944367 /* FocusSquare.swift in Sources */,
 				DBFD40F32312B80C0037B815 /* Moto1.swift in Sources */,
 				3929C48C1E89EC2C00E00B60 /* AppDelegate.swift in Sources */,
@@ -414,7 +418,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = Z8545G939K;
@@ -432,7 +436,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = Z8545G939K;
